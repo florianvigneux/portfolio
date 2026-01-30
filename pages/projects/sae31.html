@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAÉ31 et 32 Florian Vigneux</title>
+    <link rel="stylesheet" href="../../styles/main.css">
+    <script src="https://kit.fontawesome.com/db0345f26c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <nav>
+                <a href="../../index.html">Accueil</a>
+                <a href="../a_propos_de_moi.html">À propos de moi</a>
+                <div class="dropdown">
+                    <span class="dropbtn">Projets</span>
+                    <div class="dropdown-content">
+                        <a href="sae11.html">SAÉ11 - Sensibilisation à l'hygiène informatique et à la cybersécurité</a>
+                        <a href="sae12.html">SAÉ12 - S'initier aux réseaux informatiques</a>
+                        <a href="sae13.html">SAÉ13 - Découverte d’un dispositif de transmission</a>
+                        <a href="sae14.html">SAÉ14 - Se présenter sur Internet</a>
+                        <a href="sae15.html">SAÉ15 - Traitement des données</a>
+                        <a href="sae21.html">SAÉ21 - Construire un réseau informatique pour une petite structure</a>
+                        <a href="sae22.html">SAÉ22 - Mesurer et caractériser un signal ou un système</a>
+                        <a href="sae23.html">SAÉ23 - Mettre en place une solution informatique pour l'entreprise</a>
+                                <a href="sae24.html">SAÉ24 - Projet intégratif de S2</a>
+                                <a href="sae31.html">SAÉ31 et 32 - Mettre en oeuvre un système de transmission</a>
+                                    <a href="sae33.html">SAÉ33 - Concevoir un réseau informatique sécurisé multi-sites</a>
+                                    <a href="sae34.html">SAÉ34 - Découvrir le pentesting</a>
+                    </div>
+                </div>
+            </nav>
+            <div class="icons">
+                <a href="https://github.com/florianvigneux"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </header>
+    <div class="main-title">SAÉ31 et 32 - Mettre en oeuvre un système de transmission</div>
+    <section class="texte">
+        <h1>Présentation</h1>
+        <p>Ce projet, regroupant les SAÉ31 et 32, consistait à simuler une situation professionnelle réelle où nous agissions en tant que collaborateurs de l'opérateur de télécommunications Krypcom. La mission était de répondre à un cahier des charges pour le client PolyLED afin de déployer une infrastructure réseau complète interconnectant ses sites (Caen et Lyon) et de mettre en oeuvre les services systèmes associés.</p>
+        <p>Pour ce faire, la promotion a été scindée en deux grandes équipes techniques :</p>
+        <ul>
+            <li>Le groupe <b>Alpha</b>, responsable du lot Infrastructure LAN/WAN</li>
+            <li>Le groupe <b>Bravo</b>, dont je faisais parti, responsable du lot Système et Services (Virtualisation, LDAP, DNS, etc.).</li>
+        </ul>
+        <p>Au sein du groupe Bravo, nous nous sommes organisés en sous-groupes de 3 à 5 personnes pour répartir la charge de travail et traiter les différentes parties techniques.</p>
+        <h1>Réalisation</h1>
+        <p>Avec l'aide de deux autres étudiants, nous avons pris la responsabilité du sous-service Hyperviseur, une partie critique pour l'hébergement de tous les services du projet. Nos actions principales, détaillées dans notre Procédure Technique d'Installation (PTI), ont couvert :</p>
+        <ul>
+            <li><b>Préparation matérielle :</b> Configuration des accès physiques et distants via iDRAC sur les serveurs Dell et création des volumes de stockage en RAID 1 pour la redondance.</li>
+            <li><b><a href="https://aws.amazon.com/fr/what-is/hypervisor">Hyperviseur</a> Proxmox VE :</b> Installation de l'hyperviseur, exécution de scripts de post-installation et gestion des droits utilisateurs pour permettre aux autres équipes (DNS, LDAP, Nextcloud) d'administrer leurs propres VMs.</li>
+            <li><b>Sauvegardes Proxmox Backup Server :</b> Déploiement d'un serveur dédié aux sauvegardes avec planification d'instantanés automatiques toutes les deux heures.</li>
+            <li><b>Simulation Réseau GNS3</b> Installation d'un serveur distant GNS3 sur Ubuntu, incluant l'importation des images Cisco (IOL) et des licences nécessaires pour simuler le backbone opérateur.</li>
+        </ul>
+        <h2>Livrable de la SAÉ</h2>
+        <h3>Procedures Techniques d’Installation</h3>
+        <div class="pdf-viewer">
+            <iframe src="../preuves/SAE31/PTI_Bravo_Hyperviseur_Proxmox_S1F3.pdf" width="100%" height="800px" frameborder="0" allowfullscreen></iframe>
+            <p class="pdf-fallback">
+                Si le PDF ne s'affiche pas, <a href="../preuves/SAE31/PTI_Bravo_Hyperviseur_Proxmox_S1F3.pdf" target="_blank" rel="noopener noreferrer">cliquez ici pour le télécharger</a>.
+            </p>
+        </div>
+        <h2>Résultat</h2>
+        <p>14,50/20 (moyenne de promo : 14,74/20)</p>
+
+
+        <h1>Analyse du positionnement sur le niveau de compétence visé</h1>
+
+        <p>★★★★★ AC21.06 : Travailler en équipe pour développer ses compétences professionnelles</p>
+
+        <p>★★☆☆☆ AC22.01 : Déployer et caractériser des systèmes de transmissions complexes</p>
+        <p>★★☆☆☆ AC22.03 : Mettre en place une connexion multi-site via un réseau opérateur</p>
+        <p>★★★★☆ AC22.04 : Administrer les réseaux d’accès des opérateurs</p>
+        <p>★★★★★ AC22.05 : Capacité à questionner un cahier des charges R&T</p>
+
+        <p>☆☆☆☆☆ AC23.02 : Développer une application à partir d’un cahier des charges donné, pour le Web ou les périphériques mobiles</p>
+        <p>★★★★☆ AC23.03 : Utiliser un protocole réseau pour programmer une application client/serveur</p>
+        <p>★★★☆☆ AC23.04 : Installer, administrer un système de gestion de données</p>
+        <p>★★☆☆☆ AC23.05 : Accéder à un ensemble de données depuis une application et/ou un site web</p>
+
+        <h1>Réflexion</h1>
+        <p>J'ai particulièrement apprécié de m'investir dans ce projet, car il m'a donné l'opportunité de contribuer à la réussite du groupe en mettant à profit mes compétences techniques. C'était une expérience très valorisante qui m'a permis de me concentrer sur ce que je sais faire de mieux : la configuration et la mise en place de services.</p>
+    </section>
+    <footer>
+        <p>© 2026 Florian Vigneux. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAÉ33 Florian Vigneux</title>
+    <link rel="stylesheet" href="../../styles/main.css">
+    <script src="https://kit.fontawesome.com/db0345f26c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <nav>
+                <a href="../../index.html">Accueil</a>
+                <a href="../a_propos_de_moi.html">À propos de moi</a>
+                <div class="dropdown">
+                    <span class="dropbtn">Projets</span>
+                    <div class="dropdown-content">
+                        <a href="sae11.html">SAÉ11 - Sensibilisation à l'hygiène informatique et à la cybersécurité</a>
+                        <a href="sae12.html">SAÉ12 - S'initier aux réseaux informatiques</a>
+                        <a href="sae13.html">SAÉ13 - Découverte d’un dispositif de transmission</a>
+                        <a href="sae14.html">SAÉ14 - Se présenter sur Internet</a>
+                        <a href="sae15.html">SAÉ15 - Traitement des données</a>
+                        <a href="sae21.html">SAÉ21 - Construire un réseau informatique pour une petite structure</a>
+                        <a href="sae22.html">SAÉ22 - Mesurer et caractériser un signal ou un système</a>
+                        <a href="sae23.html">SAÉ23 - Mettre en place une solution informatique pour l'entreprise</a>
+                                <a href="sae24.html">SAÉ24 - Projet intégratif de S2</a>
+                                <a href="sae31.html">SAÉ31 et 32 - Mettre en oeuvre un système de transmission</a>
+                                <a href="sae33.html">SAÉ33 - Concevoir un réseau informatique sécurisé multi-sites</a>
+                                <a href="sae34.html">SAÉ34 - Découvrir le pentesting</a>
+                    </div>
+                </div>
+            </nav>
+            <div class="icons">
+                <a href="https://github.com/florianvigneux"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </header>
+    <div class="main-title">SAÉ33 - Concevoir un réseau informatique sécurisé multi-sites</div>
+    <section class="texte">
+        <h1>Présentation</h1>
+        <p>Dans le cadre de cette SAE, mon groupe (cinq étudiants en tout) et moi avons été recrutés par la société Pellet-SA. Notre mission s'est déroulée en trois phases : d'abord la mise en place d'une infrastructure mais sans mesures de sécurité (car le client y était initialement réfractaire). L'objectif final était de livrer une maquette réseau multi-sites complè</p>
+        <h1>Réalisation</h1>
+        <p>Concernant mon rôle, j'ai participé à l'élaboration du plan d'adressage IP de l'entreprise, en incluant notamment le calcul VLSM avec une marge de 25% pour l'évolution future. Cependant, la majeure partie de mon travail s'est concentrée sur la partie services, spécifiquement sur Windows Server, où j'ai réalisé les tâches suivantes :</p>
+        <ul>
+            <li><b>Sécurisation des accès distants :</b> J'ai configuré l'accès SSH sur le serveur Windows en remplaçant l'authentification par mot de passe par un système de clés privées/publiques. La mise en place s'est faite en PowerShell.</li>
+            <li><b>Infrastructure Active Directory :</b> J'ai déployé le domaine G7-Pellet.com.test et structuré l'annuaire en appliquant la méthode AGDLP (Comptes, Groupes Globaux, Groupes de Domaine Local, Permissions) pour organiser les utilisateurs et les groupes.</li>
+            <li><b>Gestion des environnements utilisateurs (GPO) :</b> J'ai mis en place des stratégies de groupe pour automatiser la configuration des postes, notamment le déploiement automatique du fond d'écran de l'entreprise et le montage d'un lecteur réseau (Z:) pointant vers le partage "Documents Administratifs".</li>
+        </ul>
+        <h2>Livrables de la SAÉ</h2>
+        <p>Je me suis permi d'omettre les autres nombreux livrables de ce projet pour me concentrer uniquement sur ceux que j'ai produis.</p>
+        <h3>Répartition des tâches</h3>
+        <div class="pdf-viewer">
+            <iframe src="../preuves/SAE33/Groupe 7 - Répartition tâches.pdf" width="100%" height="800px" frameborder="0" allowfullscreen></iframe>
+            <p class="pdf-fallback">
+                Si le PDF ne s'affiche pas, <a href="../preuves/SAE33/Groupe 7 - Répartition tâches.pdf" target="_blank" rel="noopener noreferrer">cliquez ici pour le télécharger</a>.
+            </p>
+        </div>
+        <h3>Plan IP</h3>
+        <div class="pdf-viewer">
+            <iframe src="../preuves/SAE33/Groupe 7 - Plan IP.pdf" width="100%" height="800px" frameborder="0" allowfullscreen></iframe>
+            <p class="pdf-fallback">
+                Si le PDF ne s'affiche pas, <a href="../preuves/SAE33/Groupe 7 - Plan IP.pdf" target="_blank" rel="noopener noreferrer">cliquez ici pour le télécharger</a>.
+            </p>
+        </div>
+        <h3>Documentation Technique Windows Server</h3>
+        <div class="pdf-viewer">
+            <iframe src="../preuves/SAE33/Groupe 7 - Windows Server - Documentation Technique.pdf" width="100%" height="800px" frameborder="0" allowfullscreen></iframe>
+            <p class="pdf-fallback">
+                Si le PDF ne s'affiche pas, <a href="../preuves/SAE33/Groupe 7 - Windows Server - Documentation Technique.pdf" target="_blank" rel="noopener noreferrer">cliquez ici pour le télécharger</a>.
+            </p>
+        </div>
+        <h3>Tests Windows Server</h3>
+        <div class="pdf-viewer">
+            <iframe src="../preuves/SAE33/Groupe 7 - Windows Server - Tests.pdf" width="100%" height="800px" frameborder="0" allowfullscreen></iframe>
+            <p class="pdf-fallback">
+                Si le PDF ne s'affiche pas, <a href="../preuves/SAE33/Groupe 7 - Windows Server - Tests.pdf" target="_blank" rel="noopener noreferrer">cliquez ici pour le télécharger</a>.
+            </p>
+        </div>
+        <h2>Résultat</h2>
+        <p>15,44/20 (moyenne de promo : 15,85/20)</p>
+        <h1>Analyse du positionnement sur le niveau de compétence visé</h1>
+        <h1>Réflexion</h1>
+        <p>Il s'agit d'un projet dans lequel je me suis beaucoup investi, il m'a permis de contribuer efficacement au travail de groupe en mettant à profit ce que je maîtrise le mieux : la configuration de services, et tout particulièrement l'administration de Windows Server et Active Directory, que nous avions moins pratiqués dernièrement.</p>
+        <p>La grande différence avec nos précédentes SAÉs a été la nécessité de réaliser l'intégralité des configurations via PowerShell au lieu de l'interface graphique. Powershell s'est révélé très utile pour automatiser des tâches répétitives comme la création d'utilisateurs, il a tout de même considérablement ralenti la mise en oeuvre de certaines actions simples que j'ai l'habitude d'exécuter bien plus rapidement en interface graphique sur Windows Server.</p>
+        <p>À mon avis avoir accès à la GUI aurait été pertinant tout en ayant la possibilité d'utiliser Powershell à l'intérieur si nécessaire.</p>
+    </section>
+    <footer>
+        <p>© 2026 Florian Vigneux. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
