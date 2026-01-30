@@ -39,18 +39,28 @@
     <div class="main-title">SAÉ34 - Découvrir le pentesting</div>
     <section class="texte">
         <h1>Présentation</h1>
+        <p>Le principe de cette SAE était de réaliser un audit de sécurité croisé. Après une première phase où chaque groupe a déployé sa propre infrastructure lors de la SAÉ33, nous avons échangé notre maquette avec un autre groupe. Ma mission consistait alors à analyser cette infrastructure inconnue en, avec pour objectifs d'énumérer le réseau, d'identifier les vulnérabilités (système et Active Directory), de démontrer leur impact par l'exploitation, et enfin de proposer un plan de remédiation détaillé pour sécuriser l'architecture auditée.</p>
         <h1>Réalisation</h1>
+        <p>Au cours de ce test d'intrusion, je me suis chargé de la reconnaissance et spécifiquement de l'attaque AS-REP Roasting, qui m'a permis de récupérer et de casser des hashs de comptes utilisateurs mal configurés (ne nécessitant pas de pré-authentification Kerberos). Une fois ces accès obtenus, j'ai exploré les partages réseau SMB pour en tirer des fichiers sensibles contenant d'autres identifiants. Enfin, j'ai pris en charge une grande partie de la rédaction du rapport final, en rédigeant notamment les recommandations de sécurité critiques concernant le durcissement des mots de passe, la segmentation réseau et la désactivation des services inutiles.</p>
         <h2>Livrable de la SAÉ</h2>
+        <h3>Rapport d'intrusion</h3>
         <div class="pdf-viewer">
-            <iframe src="../preuves/SAE31/PTI_Bravo_Hyperviseur_Proxmox_S1F3.pdf" width="100%" height="800px" frameborder="0" allowfullscreen></iframe>
+            <iframe src="../preuves/SAE34/Rapport_de_Test_dIntrusion_SAE33_G7.pdf" width="100%" height="800px" frameborder="0" allowfullscreen></iframe>
             <p class="pdf-fallback">
-                Si le PDF ne s'affiche pas, <a href="../preuves/SAE31/PTI_Bravo_Hyperviseur_Proxmox_S1F3.pdf" target="_blank" rel="noopener noreferrer">cliquez ici pour le télécharger</a>.
+                Si le PDF ne s'affiche pas, <a href="../preuves/SAE34/Rapport_de_Test_dIntrusion_SAE33_G7.pdf" target="_blank" rel="noopener noreferrer">cliquez ici pour le télécharger</a>.
             </p>
         </div>
         <h2>Résultat</h2>
-        <p>/20 (moyenne de promo : /20)</p>
+        <p>Les notes ne sont pas encore dispoibles concernant cette SAÉ.</p>
         <h1>Analyse du positionnement sur le niveau de compétence visé</h1>
+        <p>★★★☆☆ AC24.01 : Connaître et utiliser les bonnes pratiques et les recommandations de cybersécurité</p>
+        <p>★★★★★ AC24.05 : Connaître les différents types d'attaque</p>
+        <p>★★★★★ AC24.06 : Comprendre des documents techniques en anglais</p>
+
+        <p>★★☆☆☆ AC25.01 : Administrer les protections contre les logiciels malveillants</p>
+        <p>★★★★★ AC25.02 : Prendre en main des outils de test de pénétration réseau/système</p>
         <h1>Réflexion</h1>
+        <p>Ce projet a représenté une semaine particulièrement intense, nécessitant une mobilisation constante pour passer de la découverte de l'infrastructure à son audit. J'ai trouvé très enrichissant de mettre en pratique des attaques complexes comme l'AS-REP Roasting et de structurer des préconisations de sécurité professionnelles pour le rapport. Cette expérience s'est conclue par une soutenance orale en fin de semaine qui s'est très bien passée pour ma part, validant ainsi la qualité de notre audit technique.</p>
     </section>
     <footer>
         <p>© 2026 Florian Vigneux. Tous droits réservés.</p>
